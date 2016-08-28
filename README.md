@@ -1,1 +1,1 @@
-# youtube_clone-
+## YouTube clone ([original YouTube page](https://www.youtube.com/watch?v=V74l_zS1x8E))for the embedding video and image project in [The Odin Project](http://www.theodinproject.com/html5-and-css3/embedding-images-and-video?ref=lnav). 
