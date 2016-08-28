@@ -1,8 +1,20 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
 body {
 	background-color: #f1f1f1;
 	font-family: Roboto,arial,sans-serif;
+	color: #333;
 	font-size: 13px;
 	font-weight: normal;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 h1 {
@@ -17,7 +29,7 @@ h4 {
 .aside-info {
 	float: right;
 	margin-top: 0;
-	margin-right: 30px;
+	margin-right: 43px;
 }
 
 .aside-info p {
@@ -25,18 +37,19 @@ h4 {
 }
 
 .next {
-	font-weight: bold;
+	font-weight: 600;
 	margin-top: 17px;
 	margin-left: 13px; 
 }
 
 iframe {
+	box-sizing: border-box;
 	margin-top: 62px;
 	margin-left: 5px;
 	background-color: #000;
-	padding: 0 40px;
+	padding: 0 35px;
 	height: 490px;
-	width: 780px;
+	width: 65.9%;
 }
 
 .fixed {
@@ -79,7 +92,7 @@ iframe {
 
 .search-button {
 	position: absolute;
-	border: 1px solid #f1f1f1;
+	border: 1px solid #c6c6c6;
 	border-radius: 0;
 	height: 31px;
 	width: 70px;
@@ -116,12 +129,14 @@ iframe {
 }
 
 .recommended {
+	box-sizing: border-box;
 	float: right;
-	width: 410px;
+	width: 32.5%;
 	margin-top: 63px;
 	margin-right: 5px;
 	margin-bottom: 230px;
 	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 
 .next-video {
@@ -135,25 +150,44 @@ iframe {
 	margin-left: 13px;
 }
 
-.video-title {
-	height: 125px;
+.aside-info a {
+	text-decoration: none;
+}
+
+.aside-info h4 {
+	font-weight: 800;
+}
+
+.channel, .views {
+	text-decoration: none;
+	color: #767676;
+	font-size: 11px;
+}
+
+.video-title, .video-desc, .comments {
+	box-sizing: border-box;
 	background-color: #fff;
-	width: 830px;
+	width: 65.9%;
 	margin-top: 8px;
 	margin-left: 5px;
 	padding: 15px;
-	border: 1px solid #f1f1f1;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.comments {
+	height: 620px;
+}
+
+.video-title {
+	height: 165px;
+}
+
+.video-desc {
+	height: 125px;
 }
 
 .video-title img {
 	margin-top: 15px;
-}
-
-.video-title h6 {
-	float: right;
-	font-weight: bold;
-	margin-top: 15px;
-	margin-right: 670px;
 }
 
 .options {
@@ -168,35 +202,29 @@ iframe {
 }
 
 .subs {
-	height: 20px;
 	width: 165px;
-	padding-left: 5px;
-	background-color: #f1f1f1;
 	margin-left: 55px;
-	margin-top: -30px;
-	border: 1px solid #f1f1f1;
+	margin-top: -52px;
 }
 
-.tick {
-	height: 13px;
+.subs h6 {
+	font-weight: 600;
 }
 
-.video-desc {
-	height: 104px;
-	background-color: #fff;
-	width: 830px;
-	margin-top: 8px;
-	margin-left: 5px;
-	padding: 15px;
-	border: 1px solid #f1f1f1;
+.subsc {
+	margin-top: -9px;
+	height: 25px;
 }
 
 .video-desc h6 {
-	font-weight: bold;
+	font-weight: 900;
 }
 
 .video-desc p {
-	line-height: 16px;
+	font-size: 12px;
+	margin-top: 5px;
+	line-height: 17px;
+	word-wrap: break-word;
 }
 
 .video-desc h5 {
@@ -205,16 +233,6 @@ iframe {
 	border-top: 1px solid #f1f1f1;
 	padding: 7px;
 	margin-top: 15px;
-}
-
-.comments {
-	height: 620px;
-	background-color: #fff;
-	width: 830px;
-	margin-top: 8px;
-	margin-left: 5px;
-	padding: 15px;
-	border: 1px solid #f1f1f1;
 }
 
 .comment {
@@ -242,10 +260,16 @@ iframe {
 
 .name {
 	margin-bottom: 5px;
+	color: #128ee9;
+}
+
+.small-link {
+	color: #767676;
+	font-size: 9px;
 }
 
 .respond {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .self {
@@ -261,6 +285,7 @@ iframe {
 .form {
 	height: 45px;
 	width: 750px;
+	padding-left: 10px;
 	border-radius: 0;
 	border: 1px solid #f1f1f1;
 }
@@ -269,9 +294,9 @@ iframe {
 	border-radius: 2px;
 	padding: 10px;
 	margin-top: 15px;
-	border: 1px solid #f1f1f1;
+	border: 1px solid #c6c6c6;
 	height: 15px;
-	width: 120px;
+	width: 90px;
 	background-color: #f1f1f1;
 }
 
@@ -287,13 +312,50 @@ footer {
 	padding: 0 30px;
 	background-color: #fff;
 	clear: both;
+	border-top: 1px solid #f1f1f1;
 }
 
 .footer-logo {
 	margin-left: -12px;
-	height: 70px;
+	height: 67px;
 }
 
 .footer-up {
 	border-bottom: 1px solid #f1f1f1;
+}
+
+.nav-footer {
+	float: right;
+	margin-top: 20px;
+	margin-right: 37%;
+}
+
+.nav-footer img {
+	margin-right: 10px;
+}
+
+.nav-com {
+	padding: 15px 0;
+}
+
+.nav-com-list, .nav-small-list {
+	padding: 10px;
+	display: inline;
+}
+
+.nav-com-link, .nav-small-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-com-list {
+	font-size: 12px;
+	font-weight: 600;
+}
+.nav-small-list {
+	font-size: 10px;
+}
+
+.liking {
+	float: right;
 }
